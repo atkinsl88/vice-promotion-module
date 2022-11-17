@@ -1,0 +1,16 @@
+{
+    "name": "liam/vice_promotion_module",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Liam\\VicePromotionModule\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Liam Atkins",
+            "email": "liam.atkins@investisdigital.com"
+        }
+    ],
+    "require": {}
+}
