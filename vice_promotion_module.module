@@ -1,0 +1,12 @@
+/**
+ * Implements hook_theme().
+ */
+function vice_promotion_module() {
+  return [
+    'promo_block' => [
+      'variables' => [
+        'data' => ['age' => '31', 'DOB' => '2 May 2000'],
+      ],
+    ],
+  ];
+}
