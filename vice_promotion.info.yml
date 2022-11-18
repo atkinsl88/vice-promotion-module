@@ -3,3 +3,7 @@ description: Adds a promotion pop-up to specific article pages.
 package: Custom
 type: module
 core_version_requirement: ^8 || ^9
+
+# Libraries
+libraries:
+  - vice_promotion/main

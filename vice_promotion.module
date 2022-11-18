@@ -1,0 +1,32 @@
+<?php 
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function vice_promotion_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the custom_block module.
+    case 'help.page.vice_promotion':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function vice_promotion_theme() {
+  $theme['promo_block'] = [
+      'variables' => [
+        'content' => NULL
+      ],
+      'template' => 'promo-block',
+    ];
+  return $theme;
+}
