@@ -24,7 +24,12 @@ class VicePromoBlock extends BlockBase {
       '#theme' => 'promo_block',
       '#cache' => [
         'max-age' => 0,
-      ]
+      ],
+      '#attached' => array(
+        'library' => array(
+          'vice_promotion/main',
+        ),
+      ),
     ];
   }
 
@@ -33,10 +38,10 @@ class VicePromoBlock extends BlockBase {
   */
   private function getRandomQuote() {
     $quotes = [
-      '3 months free',
-      '6 months free',
-      '£15 off',
-      'Win a holiday',
+      '3 months free*',
+      '6 months free*',
+      '£15 off*',
+      'Win a holiday*',
     ];
     return $quotes[array_rand($quotes)];
   }

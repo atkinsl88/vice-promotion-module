@@ -1,0 +1,23 @@
+// Imports for fundementals to load first
+@import '../../../../themes/vice/src/scss/variables';
+@import '../../../../themes/vice/src/scss/_breakpoints';
+@import '../../../../themes/vice/src/scss/_bs-grid';
+@import '../../../../themes/vice/src/scss/_fonts.scss';
+
+// Import components
+@import '../../../../themes/vice/src/scss/components/buttons';
+
+@include media-breakpoint-up (xs) {
+  .promo-block {
+    padding: $region-padding;
+    background-color: $secondary-color;
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    h2, p, a {
+      color: $primary-color;
+      margin-bottom: 0.5rem;
+      width: 78ch;
+    }
+  }
+}

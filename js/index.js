@@ -1,2 +1,2 @@
 // Entry point into Webpack
-import './scss/main.scss'
+import '../scss/main.scss'
