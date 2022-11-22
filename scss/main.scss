@@ -17,7 +17,7 @@
     h2, p, a {
       color: $primary-color;
       margin-bottom: 0.5rem;
-      width: 78ch;
+      max-width: 60ch;
     }
   }
 }
